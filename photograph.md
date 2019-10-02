@@ -9,7 +9,7 @@ reward: false
 align=center>
 
 
-![新中关华灯初上](/images/20190902-01.jpg)
+![新中关华灯初上](/images/20190902-01.jpg){: width = "40" height = "26"}
 
 
 <table>
