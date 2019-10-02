@@ -15,15 +15,15 @@ defaults:
 
 # --- 网站信息设置 ---
 # 下面填写你的博客标题
-title: Minimalism
+title: ajksunkang
 # 下面填写你的网络常用名
-name: minimalism
+name: ajksunkang
 # 下面填写你的座右铭或者是个性签名
-description: Minimalism is a jekyll theme for minimalist
+description: 八小时工作，八小时生活，八小时窝着
 # 你博客的 url 地址，比如：https://showzeng.github.io 或者是自定义的域名
-url: https://showzeng.github.io
+url: https://ajksunkang269.github.io
 # 在页尾的版权时间信息，比如：2016-2018，默认是 2018 年
-copyright_time: 2018
+copyright_time: 2019
 # 标签页的 logo 及博客的头像，如果你想引用网络图片资源，就取消下面的注解，并填写图片资源的 url 地址
 # 或者，推荐的做法是将这两个图片资源下载到本地的 /assets/img/ 文件夹下，且图片名必须命名为 favicon 和 avatar
 # favicon:
@@ -33,7 +33,7 @@ copyright_time: 2018
 
 # --- 文章列表页 ---
 # 文章列表是否显示摘要
-show_excerpt: true
+show_excerpt: false
 # --- 文章页 ---
 
 
