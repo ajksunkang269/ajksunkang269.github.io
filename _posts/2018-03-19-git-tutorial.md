@@ -10,7 +10,7 @@ excerpt: 汇总笔者在Linux开发过程中常用shell命令，以及git、vim�
 
 - [ ] 基本命令
 
-```
+```bash
 git init
 git add readme.txt
 git commit -m "wrote a readme file"
@@ -21,7 +21,7 @@ git push -u origin master
 ```
 - [ ] 可能用到的命令
 
-```cpp
+```shell
 git clone --branch new_branch https://github.com/Hacker-vision/itchat-master.git new-diretory[指定目录，缺省会创建与远程仓库名相同的目录名]
 git config --global user.name "ajksunkang"
 git config --global user.email "ajksunkang@pku.edu.cn"
@@ -167,7 +167,7 @@ shell: ctrl + a  //光标跳到当前指令的第一个字符处
 
 
 ### linux压缩解压缩命令大全
-```shell
+```bash
 .tar 
 解包：tar xvf FileName.tar
 打包：tar cvf FileName.tar DirName
