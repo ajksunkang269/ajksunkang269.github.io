@@ -30,13 +30,13 @@ git clean -d -fx //暂存区域的文件修改全部删除
 ```
 - [ ] 查看历史日志
 
-```cpp
+```bash
 git status
 git log
 ```
 - [ ] 回退版本
 
-```cpp
+```bash
 git checkout 3628164       //切换到某个commit id
 git reset --hard HEAD^
 git reset --hard 3628164
@@ -44,7 +44,7 @@ git reflog                 //回退后返回最新版本
 ```
 - [ ] 分支管理
 
-```cpp
+```bash
 git branch new_branch       //创建 new branch
 git checkout new_branch     //切换 branch
 git branch                  //查看 branch情况
@@ -59,7 +59,7 @@ trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 
 - [ ] apt-get安装和卸载命令
 
-```
+```bash
 apt-get update                          //更新源
 apt-get upgrade                         //升级软件
 apt-get install software_name           //安装软件（推荐）
@@ -72,13 +72,13 @@ apt-get autoremove software_name        //卸载软件及其依赖的安装包�
 - [ ] diff & patch
 
 1.单个文件
-```cpp
+```bash
 diff –uN  from-file  to-file  > to-file.patch  //创建补丁
 patch –p0 < to-file.patch                      //打补丁
 patch –RE –p0 < to-file.patch                  //清除补丁
 ```
 2.多个文件
-```cpp
+```bash
 diff –uNr  old_docu  new_docu >  myfirst.patch  //创建补丁
 cd old_docu/
 patch –p1 < ../myfirst.patch                    //打补丁
@@ -87,14 +87,14 @@ patch –R –p1 < myfirst.patch                     //清除补丁
 
 - [ ] 查看服务器配置
 
-```cpp
+```bash
 lscpu                          //处理器信息
 free -m                        //内存大小（MB）
 df -h                          //硬盘大小
 ```
 - [ ] 查看内核版本和发行版本
 
-```cpp
+```bash
 //查看内核版本（linux 4.19.23）
 uname -a
 cat /proc/version
@@ -105,7 +105,7 @@ cat /etc/issue
 
 - [ ] U盘挂载
 
-```cpp
+```bash
 lsblk                          //打印块设备
 sudo mount /dev/sdb1 /mnt
 sudo umount /mnt 
@@ -113,19 +113,19 @@ sudo umount /mnt
 
 - [ ] 查看文件大小
 
-```cpp
+```bash
 du -h --max-depth=0 vmlinux    //查看某个文件or目录的字节大小
 ```
 
 - [ ] 软连接
 
-```cpp
+```bash
 ln -s 源目录或文件 新链接文件
 ```
 
 - [ ] 环境变量
 
-```cpp
+```bash
 （1）vim /etc/profile     //所有用户生效（永久）
 （2）vim ~/.bash_profile
 source  ~/.bash_profile    //当前用户,不source的话下次重进此用户才生效（永久）
@@ -137,7 +137,7 @@ source  ~/.bash_profile    //当前用户,不source的话下次重进此用户�
 ---
 ### 我的vim配置（~/.vimrc）
 
-```cpp
+```bash
 " 自动显示行号
 set nu
 " ColorScheme
@@ -150,7 +150,7 @@ set cursorline
 ```
 ### 常用vim操作
 
-```cpp
+```bash
 shift+d  //删除光标到行末
 shift+g  //调到文件最后一行
 shift+a  //光标调到当前行的行末
@@ -160,7 +160,7 @@ ctrl + ww         //分屏切换
 o                 //插入空行
 ```
 
-```cpp
+```bash
 shell: ctrl + a  //光标跳到当前指令的第一个字符处
 ```
 
@@ -240,7 +240,7 @@ _______________
 
 注：虚拟机配置静态IP时要将网络设置成桥接，而NAT网络默认虚拟机是强制DHCP的.
 
-```cpp
+```bash
 ifconfig -a           #查看所有网卡设备，包括没启用、ifconfig显示不出来的
 ifconfig etho up      #启动网卡eth0
 ifconfig etho down    #关闭网卡eth0
@@ -266,7 +266,7 @@ iface enp2s0f0 inet static
 ifconfig  //查看新的网络设置
 ```
 
-```cpp
+```bash
 sudo adduser sunkang  #添加用户,会创建同名的用户主目录
 sudo vim /etc/sudoers  #新用户设置为管理员
 修改文件如下：
@@ -284,6 +284,6 @@ sunkang ALL=(ALL) ALL
 
 [3.ubunutu下制作ubuntu的启动盘->dd(https://blog.csdn.net/wang4it/article/details/78998217)](https://blog.csdn.net/wang4it/article/details/78998217)
 
-格式化成ext4(U盘仅Linux识别):sudo mkfs.ext4 /dev/sdb4
+格式化成ext4(U盘仅Linux识别):`sudo mkfs.ext4 /dev/sdb4`
 
-格式化成fat32(兼容性更好):sudo mkfs.fat /dev/sdb4 -I
+格式化成fat32(兼容性更好):`sudo mkfs.fat /dev/sdb4 -I`
