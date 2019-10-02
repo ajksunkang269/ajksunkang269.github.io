@@ -33,17 +33,17 @@ copyright_time: 2019
 
 # --- 文章列表页 ---
 # 文章列表是否显示摘要
-show_excerpt: false
+show_excerpt: true
 # --- 文章页 ---
 
 
 # --- 社交链接 ---
 # 取消下面的注解，并填写相应的你要开启的社交链接
-twitter: https://twitter.com/showzeng
-weibo: https://weibo.com/showzeng
-github: https://github.com/showzeng/Minimalism
+#twitter: https://twitter.com/showzeng
+#weibo: https://weibo.com/showzeng
+github: https://github.com/Hacker-vision
 # 邮件地址前面带上 mailto:
-email: mailto:kingstageshow@gmail.com
+email: mailto:ajksunkang@pku.edu.cn
 # RSS 订阅
 rss: true
 # --- 社交链接 ---
