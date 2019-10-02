@@ -5,6 +5,10 @@ date: 2018-08-12 21:12:52 +0800
 reward: false
 ---
 
+<img src="/images/20190902-01.jpg" width = "40" height = "26" alt="新中关华灯初上" 
+align=center>
+
+
 ![新中关华灯初上](/images/20190902-01.jpg)
 
 
